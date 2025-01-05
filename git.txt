@@ -1,0 +1,14 @@
+git init --> initilize empty respo
+git status
+git clone ""
+git add .
+git checkout branch name --> convert branch
+git branch -a --> see all branch
+git branch --> show current branch
+git commit -m ""
+git push origin branch name
+git brach -M "branch name" --> change the brach name
+git merge main --> merge the two branches
+git remote add origin "resp link" --> uploade exit file form local device
+git log
+git branch (branch name)

@@ -1,174 +1,28 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        *{
-            margin: 0;
-        }
-        html {
-            background-color: bisque;
-        }
-
-        .chess {
-            margin-top: 70px;
-            background-color: white;
-            width: 800px;
-            height: 800px;
-            margin: 10px auto;
-            margin-top: 10px;
-            transition-property: all linear;
-        }
-
-        .row {
-            width: 100%;
-            height: 100px;
-            float: left;
-        }
-
-        .box {
-            height: 100px;
-            width: 100px;
-            float: left;
-            font-size: 70px;
-            text-align: center;
-            color: gray;
-        }
-
-        .opp .box {
-            color: rgb(101, 101, 147);
-        }
-
-        .box:hover {
-            background-color: rgb(190, 190, 227);
-        }
-
-        .black {
-            background-color: black;
-        }
-
-        header{
-            background-color: rgb(154, 126, 86);
-        }
-        nav ul{
-            padding: 20px;
-            display: flex;
-            justify-content: end;
-            
-        }
-        nav ul li{
-            margin-left: 20px;
-            list-style: none;
-            font-size: 20px;
-            background-color: azure;
-            padding: 15px;
-            border-radius: 30px;
-            transition: all 0.5s linear;
-
-        }
-        nav ul li:hover{
-            cursor: pointer;
-            background-color: rgb(98, 180, 210);
-        }
-    </style>
+    <link rel="stylesheet" href="chessDesign.css">
 </head>
 
 <body>
-    <header>
-        <nav>
+    <div class="navbar">
+        <div class="logo">Chess</div>
+        <a href="#" class="btn">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </a>
+        <div class="navbar-link">
             <ul>
-                <li>2PLAYER</li>
-                <li>ROBOAT</li>
+                <li><a href="#">2 player</a></li>
+                <li><a href="#">Single Player</a></li>
+                <li><a href="#">Exit</a></li>
             </ul>
-        </nav>
-    </header>
-    <div class="chess">
-        <div class="row">
-            <div class="box">&#9814</div>
-            <div class="box black">&#9816</div>
-            <div class="box">&#9821</div>
-            <div class="box black">&#9819</div>
-            <div class="box">&#9818</div>
-            <div class="box black">&#9821</div>
-            <div class="box">&#9816</div>
-            <div class="box black">&#9814</div>
-        </div>
-        <div class="row">
-            <div class="box black">&#9823</div>
-            <div class="box ">&#9823</div>
-            <div class="box black">&#9823</div>
-            <div class="box ">&#9823</div>
-            <div class="box black">&#9823</div>
-            <div class="box ">&#9823</div>
-            <div class="box black">&#9823</div>
-            <div class="box">&#9823</div>
-        </div>
-        <div class="row">
-            <div class="box"></div>
-            <div class="box black"></div>
-            <div class="box"></div>
-            <div class="box black"></div>
-            <div class="box"></div>
-            <div class="box black"></div>
-            <div class="box"></div>
-            <div class="box black"></div>
-        </div>
-        <div class="row">
-            <div class="box black"></div>
-            <div class="box "></div>
-            <div class="box black"></div>
-            <div class="box "></div>
-            <div class="box black"></div>
-            <div class="box "></div>
-            <div class="box black"></div>
-            <div class="box"></div>
-        </div>
-        <div class="row">
-            <div class="box"></div>
-            <div class="box black"></div>
-            <div class="box"></div>
-            <div class="box black"></div>
-            <div class="box"></div>
-            <div class="box black"></div>
-            <div class="box"></div>
-            <div class="box black"></div>
-        </div>
-        <div class="row">
-            <div class="box black"></div>
-            <div class="box "></div>
-            <div class="box black"></div>
-            <div class="box "></div>
-            <div class="box black"></div>
-            <div class="box "></div>
-            <div class="box black"></div>
-            <div class="box"></div>
-        </div>
-        <div class="opp">
-            <div class="row">
-                <div class="box">&#9823</div>
-                <div class="box black">&#9823</div>
-                <div class="box">&#9823</div>
-                <div class="box black">&#9823</div>
-                <div class="box">&#9823</div>
-                <div class="box black">&#9823</div>
-                <div class="box">&#9823</div>
-                <div class="box black">&#9823</div>
-            </div>
-            <div class="row">
-                <div class="box black">&#9814</div>
-                <div class="box ">&#9816</div>
-                <div class="box black">&#9821</div>
-                <div class="box ">&#9819</div>
-                <div class="box black">&#9818</div>
-                <div class="box ">&#9821</div>
-                <div class="box black">&#9816</div>
-                <div class="box">&#9814</div>
-            </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
